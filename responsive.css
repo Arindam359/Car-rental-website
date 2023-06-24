@@ -1,0 +1,414 @@
+
+@media only screen and (max-width: 600px) {
+    
+    .middle-nav i{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .middle-nav ul{
+        background: rgb(234, 232, 232);
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 90px 40px;
+        z-index: 3;
+        transition: right 0.5s;
+    }
+   
+    #sidemenu.showsidebar{
+        right: 0;
+    }
+
+    .middle-nav ul li{
+        margin: 12px 0;
+    }
+    .middle-nav ul i {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .content-first, .select-contaner, .after-select-container, .rental-container, .about-container, .testimonials-container, .faq-container, .contact-container, nav {
+        width: 100%;
+    }
+    nav{
+        height: 75px;
+        padding: 0;
+    }
+    .left-nav{
+        align-items: center;
+    }
+    .left-nav, .left-nav .bol{
+        font-size: 14px;
+    }
+    .right-nav i{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .right-nav{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-nav a .nonrespo{
+        display: none;
+    }
+    .right-nav a .respo{
+        display: block;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .right-nav .btn-red{
+        padding: 4px 10px;
+    }
+    .content-first{
+        flex-direction: column;
+    }
+    .first-col-1{
+        width: 85%;
+        order: 2;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .first-col-2{
+        width: 80%;
+    }
+    .first-col-1 .headings h1{
+        font-size: 35px;
+    }
+    .first-col-1 .buttons{
+        justify-content: center;
+    }
+    .first-col-1 .buttons .btn-red{
+        margin-right: 30px;
+    }
+    .select-header{
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .selecter-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .selecter-1 .select-menu-2{
+        margin-top: -200px;
+    }
+    .selecter-2{
+        flex-direction: column;
+        margin: -210px 0 20px;
+    }
+    
+    .after-select-container{
+        margin: 0;
+    }
+    .after-select-container h1{
+        font-size: 28px;
+        padding: 0 30px;
+        margin-bottom: 50px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card{
+        height: fit-content;
+    }
+    .rental-headers{
+        width: 80%;
+    }
+    .car-models{
+        flex-direction: column;
+    }
+    .car-names{
+        width: 75%;
+        text-align: center;
+        padding: 0;
+    }
+    .car-details{
+        flex-direction: column;
+    }
+    .car-img{
+        width: 100%;
+        height: 350px;
+    }
+    .car-prices{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .about-img{
+        width: 80%;
+    }
+    .about-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-right{
+        width: 70%;
+    }
+    .testimonials-container{
+        margin: 0;
+        padding: 0;
+    }
+    .testmonials-header{
+        width: 80%;
+        margin: 100px auto 20px;
+    }
+    .revews{
+        flex-direction: column;
+        align-items: center;
+    }
+    .revew-card{
+        width: 70%;
+    }
+    .revew-ppl .name {
+        margin: 0 20px 0 15px;
+    }
+    .faq-container{
+        margin: 0;
+    }
+    .faq-heading{
+        width: 80%;
+    }
+    .faq-main{
+        justify-content: center;
+    }
+    .faq-img{
+        display: none;
+    }
+    .faq-menu{
+        width: 75%;
+    }
+    .contact-container {
+        margin: 50px 0 20px;
+    }
+    .store-text{
+        width: 80%;
+        margin: 0;
+        text-align: center;
+    }
+    .store-img{
+        display: none;
+    }
+    .store-text h1{
+        font-size: 30px;
+    }
+    .store-text p{
+        font-size: 20px;
+    }
+    .store-logo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .store-logo img{
+        margin: 10px 0;
+    }
+    .bl{
+        display: none;
+    }
+    .contact-information{
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-contact{
+        width: 80%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .lst{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper{
+        width: 300px;
+        height: 380px;
+    }
+    .form-box h2{
+        font-size: 1.5rem;
+        margin-bottom: -20px;
+    }
+
+}
+
+
+/* -------------------resposive medium-------------- */
+
+
+@media (min-width:601px) and (max-width:1150px) {
+    
+
+    .content-first, .select-contaner, .after-select-container, .rental-container, .about-container, .testimonials-container, .faq-container, .contact-container, nav {
+        width: 100%;
+    }
+    .left-nav{
+        align-items: center;
+    }
+    .left-nav, .left-nav .bol{
+        font-size: 14px;
+    }
+
+    .right-nav a .nonrespo{
+        display: none;
+    }
+    .right-nav a .respo{
+        display: block;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .right-nav .btn-red{
+        padding: 4px 10px;
+    }
+    nav{
+        height: 75px;
+        padding: 0;
+    }
+    .md-ds-n{
+        display: none;
+    }
+    .middle-nav ul a{
+        margin: 0 9px;
+    }
+    .first-col-1 .headings h1{
+        font-size: 33px;
+    }
+    .first-col-1 .buttons{
+        flex-direction: column;
+    }
+    .first-col-1 .buttons p{
+        margin-bottom: 15px;
+    }
+    .select-contaner{
+        padding: 0;
+    }
+    .select-header{
+        text-align: center;
+        margin: 0;
+    }
+    .select-md{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .selecter-1{
+        flex-direction: column;
+    }
+    .selecter-2{
+        flex-direction: column;
+    }
+    .select-menu-2{
+        margin-top: -200px;
+    }
+    .select-menu{
+        width: 250px;
+    }
+    .date{
+        width: 250px;
+        margin: 15px 0 35px;
+    }
+    .select-btnn{
+        width: 250px;
+    }
+    .after-select-container{
+        margin: -100px 0 20px;
+    }
+    .cards{
+        align-items: first baseline;
+    }
+    .rental-container{
+        margin: 150px auto;
+    }
+    .car-models{
+        flex-direction: column;
+    }
+    .car-names{
+        width: 85%;
+    }
+    .car-names ul {
+        display: flex;
+        justify-content: center;
+    }
+    .car-names ul li {
+        font-size: 14px;
+    }
+    .main-car-details{
+        width: 100%;
+    }
+    .car-img{
+        width: 57%;
+    }
+    .car-prices{
+        width: 41%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left{
+        width: 81%;
+    }
+    .about-right{
+        display: flex;
+        width: 81%;
+        justify-content: space-between;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
+    .logo-box{
+        flex-direction: column;
+        width: 28%;
+    }
+    .about-logo i{
+        margin-bottom: 15px;
+    }
+    .testimonials-container{
+        margin: 0;
+    }
+    .testmonials-header{
+        margin: 40px auto;
+    }
+    .revew-card{
+        width: 40%;
+        margin: 20px;
+    }
+    .revew-ppl i{
+        display: none;
+    }
+    .faq-container{
+        margin: 0;
+    }
+    .faq-img{
+        display: none;
+    }
+    .faq-main{
+        justify-content: center;
+    }
+    .mdl{
+        display: none;
+    }
+
+    .call-email{
+        width: 210px;
+    }
+}

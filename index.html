@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/061abc6adb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a href="#"><i class="fa-solid fa-car-side fa-3x" style="color: #f23a3a;"></i>
+                    <div class="lft-header">
+                        <p class="bol"><b>CAR</b></p>
+                        <p>Rental</p>
+                </a>
+            </div>
+            </div>
+            <div class="middle-nav">
+                <ul id="sidemenu">
+                    <li><a href="#"><b>Home</b></a></li>
+                    <li class="md-ds-n"><a href="#booking"><b>Booking</b></a></li>
+                    <li><a href="#rental"><b>Car Models</b></a></li>
+                    <li><a href="#abtt"><b>About</b></a></li>
+                    <li class="md-ds-n"><a href="#testimonials"><b>Testimonials</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    <i class="fa-solid fa-xmark" id="cross"></i>   
+                </ul>
+                
+            </div>
+            <div class="right-nav">
+                   <a href="#"><p class="btn-red loginpopbtn nonrespo">Sign In / Register</p></a>
+                    <a href="#"><p class="btn-red respo">Sign In</p></a>
+                   <i class="fa-solid fa-bars" id="barr"></i>
+        
+            </div>
+        </nav>
+    </header>
+      <div class="login-reg-box">
+        <div class="wrapper">
+            <div class="cancel-icon"><i class="fa-solid fa-xmark"></i></div>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="incon"><i class="fa-solid fa-envelope" style="color: #000000;"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="incon"><i class="fa-solid fa-lock" style="color: #000000;"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button type="submit" class="bnn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="incon"><i class="fa-solid fa-user" style="color: #000000;"></i></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="incon"><i class="fa-solid fa-envelope" style="color: #000000;"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="incon"><i class="fa-solid fa-lock" style="color: #000000;"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox"> I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="bnn">Register</button>
+                    <div class="login-register">
+                        <p>already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    <main>
+        <section class="first">
+            <div class="content-first">
+                <div class="first-col-1">
+                    <div class="headings">
+                        <p><b style="font-size: 20px;">Plan your dream Road trip now</b></p>
+                        <h1>Save <span style="color: #f23a3a;">big</span> with our</h1>
+                        <h1>car rental</h1>
+                        <p style="font-size: 13px;">Rent the car of your dreams. Unbeatable prices, unlimited miles,
+                            flexible pick-up option and much more.</p>
+                    </div>
+                    <div class="buttons">
+                        <p class="btn-red">Book Ride <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                        </p>
+                        <p class="btn-black">Learn More <i class="fa-sharp fa-solid fa-chevron-right"
+                                style="color: #ffffff;"></i></p>
+                    </div>
+                </div>
+                <div class="first-col-2"><img src="Img/front-car img.jpg" alt=""></div>
+            </div>
+        </section>
+        <section class="select">
+            <div class="select-contaner" id="booking">
+                <p class="select-header"><b>Book your car</b></p>
+                <div class="select-md">
+                <div class="selecter-1">
+                    <div class="select-menu">
+                        <p><i class="fa-solid fa-car" style="color: #f23a3a;"></i> Select Your Car <i
+                                class="fa-solid fa-asterisk fa-2xs" style="color: #f23a3a;"></i></p>
+                        <div class="select-btn">
+                            <span class="sbtn-text">Select your car type</span>
+                            <i class="fa-solid fa-angle-down fa-sm"></i>
+                        </div>
+
+                        <ul class="options">
+                            <li class="option">
+                                <i class="fa-solid fa-car" style="color: rgb(255, 52, 52);"></i>
+                                <span class="option-text">Toyota Innova Crysta</span>
+                            </li>
+                            <li class="option">
+                                <i class="fa-solid fa-car" style="color: rgb(17, 2, 97);"></i>
+                                <span class="option-text">Renault Kwid</span>
+                            </li>
+                            <li class="option">
+                                <i class="fa-solid fa-car" style="color: rgb(22, 139, 43);"></i>
+                                <span class="option-text">Volkswagen Virtus</span>
+                            </li>
+                            <li class="option">
+                                <i class="fa-solid fa-car" style="color: rgb(78, 78, 255);"></i>
+                                <span class="option-text">Mahindra XUV300</span>
+                            </li>
+                            <li class="option">
+                                <i class="fa-solid fa-car" style="color: rgb(255, 172, 55);"></i>
+                                <span class="option-text">Maruti Suzuki XL6</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-menu select-menu-2">
+                        <p><i class="fa-solid fa-location-dot" style="color: #f23a3a;"></i> Pick-Up <i
+                                class="fa-solid fa-asterisk fa-2xs" style="color: #f23a3a;"></i></p>
+                        <div class="select-btn">
+                            <span class="sbtn-text">Select pick up location</span>
+                            <i class="fa-solid fa-angle-down fa-sm"></i>
+                        </div>
+
+                        <ul class="options">
+                            <li class="option">
+                                <span class="option-text">Kolkata - West Bengal</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Mumbai - Maharastra</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">New Delhi - Delhi </span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Chennai - Tamilnadu</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Hyderabad - Telengana</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-menu select-menu-2">
+                        <p><i class="fa-solid fa-location-dot" style="color: #f23a3a;"></i> Drop-Of <i
+                                class="fa-solid fa-asterisk fa-2xs" style="color: #f23a3a;"></i></p>
+                        <div class="select-btn">
+                            <span class="sbtn-text">Select drop off location</span>
+                            <i class="fa-solid fa-angle-down fa-sm"></i>
+                        </div>
+
+                        <ul class="options">
+                            <li class="option">
+                                <span class="option-text">Kolkata - West Bengal</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Mumbai - Maharastra</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">New Delhi - Delhi </span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Chennai - Tamilnadu</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Hyderabad - Telengana</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="selecter-2">
+                    <div class="date-box">
+                        <p><i class="fa-solid fa-calendar-days fa-sm" style="color: #f23a3a;"> </i> Pick Up <i
+                                class="fa-solid fa-asterisk fa-2xs" style="color: #f23a3a;"></i></p>
+                        <input type="date" name="date" value="date" class="date">
+
+                    </div>
+                    <div class="date-box">
+                        <p><i class="fa-solid fa-calendar-days fa-sm" style="color: #f23a3a;"> </i> Pick Up <i
+                                class="fa-solid fa-asterisk fa-2xs" style="color: #f23a3a;"></i></p>
+                        <input type="date" name="date" value="date" class="date">
+
+                    </div>
+                    <p class="btn-red select-btnn">
+                        Search</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="after-select">
+            <div class="after-select-container">
+                <p style="font-weight: 600; text-align: center; margin-bottom: 10px; font-size: 20px;">Plan your trip
+                    now</p>
+                <h1><b>Quick and Easy car rental</b>
+                </h1>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-car-rear fa-2xl"
+                            style="color: #ff6c3b; font-size: 50px; margin: 10px 0 70px;"></i>
+                        <p style="font-size: 20px; margin-bottom: 12px;"><b>Select Car</b></p>
+                        <p style="font-size: 15px;">We offer a big range of cars for all your driving needs. We have the
+                            perfect car to meet your needs</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-user-clock fa-2xl"
+                            style="color: #ff6c3b; font-size: 50px; margin: 10px 0 70px;"></i>
+                        <p style="font-size: 20px; margin-bottom: 12px;"><b>Contact Operator</b></p>
+                        <p style="font-size: 15px;">Our knowldgeable and friendly operators are always ready to help
+                            with any questions or concerns</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-car-side fa-2xl"
+                            style="color: #ff6c3b; font-size: 50px; margin: 10px 0 70px;"></i>
+                        <p style="font-size: 20px; margin-bottom: 12px;"><b>Let's Drive</b></p>
+                        <p style="font-size: 15px;">Wheather you're hitting the open road, we've got you covered with
+                            our wide range of cars</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <secction class="rental">
+            <div class="rental-container" id="rental">
+                <div class="rental-headers">
+                    <p><b>Vehicle Models</b></p>
+                    <h1>Our rental fleet</h1>
+                    <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip
+                    </p>
+                </div>
+                <div class="car-models">
+                    <div class="car-names">
+                        <ul style="list-style: none;">
+                            <li class="carname-btn rd" onclick="opentab('camry')"><b>Toyota Camry</b></li>
+                            <li class="carname-btn" onclick="opentab('xuv500')"><b>Mahindra XUV500</b></li>
+                            <li class="carname-btn" onclick="opentab('tiguan')"><b>Volkswagen-Tiguan</b></li>
+                            <li class="carname-btn" onclick="opentab('crysta')"><b>Toyota Innova Crysta</b></li>
+                            <li class="carname-btn" onclick="opentab('virtus')"><b>Volkswagen Virtus</b></li>
+                            <li class="carname-btn" onclick="opentab('kwid')"><b>Renault Kwid</b></li>
+                        </ul>
+                    </div>
+                    <div class="main-car-details">
+                    <div class="car-details-container active-models" id='camry'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/Toyota_Camry_Red_White_background_540853_2560x1440.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    50</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>Camry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>5/6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details-container" id='xuv500'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/Mahindra-XUV300--.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    40</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>XUV</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Mahih</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>4/5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details-container" id='tiguan'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/Volkswagen-Tiguan-040120221412.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    35</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>Tiguan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Volks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>5/6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details-container" id='crysta'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/toyota 2.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    40</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>Crysta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2010</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>5/6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details-container" id='virtus'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/volkswagen.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    45</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>Virtus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>volks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>4/5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details-container" id='kwid'>
+                        <div class="car-details">
+                            <div class="car-img">
+                                <img src="Img/Renault.jpg" alt="">
+                            </div>
+                            <div class="car-prices">
+                                <table>
+                                    <caption><b>BOOK NOW</b></caption>
+                                    <tr>
+                                        <th colspan="2"><span style="font-size: 25px; margin-right: 12px;"><b>$
+                                                    35</b></span><span>/ rent per day</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>Kwid</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Renault</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doors</td>
+                                        <td>5/6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission</td>
+                                        <td>Manual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel</td>
+                                        <td>Diesel</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+
+            </div>
+        </secction>
+        <div class="banner">
+            <h1><b>Save big with our cheap car rental!</b></h1>
+            <p style="font-size: 20px;"><b>Top Airports. Local Suppliers. <span style="color: #f23a3a;">24/7</span> Support</b></p>
+        </div>
+        <section class="about">
+            <div class="about-container" id="abtt">
+                <div class="main-about">
+                    <div class="about-img">
+                        <img src="Img/tri-car img.png" alt="">
+                    </div>
+                    <div class="about-text">
+                        <div class="about-left">
+                            <p style="font-size: 20px;"><b>Why Choose Us</b></p>
+                            <h1 style="font-size: 30px; margin: 10px 0;"><b>Best deals you will ever find</b></h1>
+                            <p style="font-size: 15px;">Discover the best deal you'll ever find with our Unbeatable offers. we are dedicated to providing you with the best value for your money. So you can enjoy top quality services and product without breaking the bark. Our deals are designed to give you the ultimate renting experince. So don't miss out on your chance to save big.</p>
+                            <p class="btn-red" style="margin-top: 20px;"><b>Find More ></b></p>
+                        </div>
+                        <div class="about-right">
+                            <div class="logo-box">
+                                <div class="about-logo"><i class="fa-solid fa-truck-monster"></i></div>
+                                <div class="about-logo-text">
+                                    <p><b>Cross Country drive</b></p>
+                                    <p style="font-size: 15px;">take your driving experice to the next level with our top-notch cars for your cross-country adventures.</p>
+                                </div>
+                            </div>
+                            <div class="logo-box">
+                                <div class="about-logo" style="margin-right: 10px;"><i class="fa-solid fa-sack-dollar"></i></div>
+                                <div class="about-logo-text">
+                                    <p><b>All Inclusive Pricing</b></p>
+                                    <p style="font-size: 15px;">Get everything you need in one convenient, transparent price with our all-inclusive pricing policiy.</p>
+                                </div>
+                            </div>
+                            <div class="logo-box">
+                                <div class="about-logo" style="margin-right: 10px;"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+                                <div class="about-logo-text">
+                                    <p><b>NO Hidden Charges</b></p>
+                                    <p style="font-size: 15px;">Enjoy our no hidden charges policiy. We belive in transparent and honest pricing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="testimonials-container" id="testimonials">
+                <div class="testmonials-header">
+                <p style="font-size: 20px; margin-bottom: 5px;"><b>Reviwed by Clients</b></p>
+                <h1 style="font-size: 30px; margin-bottom: 15px;"><b>Client's Testimonials</b></h1>
+                <p style="font-size: 15px;">Discover the positive impact we've made on the out clients by reading through thier testimonials. Our clients have experinced our service and results, and they are eager to share their positive experices with you.</p>
+            </div>
+                <div class="revews">
+                    <div class="revew-card">
+                        <p style="margin-bottom: 30px;"><b><i>"We are very happy from this website and had an amazing experince! The booking was easy and the rental rates were very affortabel."</i></b></p>
+                        <div class="revew-ppl">
+                            <img src="Img/cr7.webp" alt="">
+                            <p class="name">
+                                <span style="font-weight: 600;">Cristiano Penaldo</span><br>Kolkata
+                        
+                            </p>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="revew-card">
+                        <p style="margin-bottom: 50px;"><b><i>"The car was in great condition and made our trip even better. Highly recomended for this car rental website!"</i></b></p>
+                        <div class="revew-ppl">
+                            <img src="Img/pessi.jpg" alt="">
+                            <p class="name">
+                                <span style="font-weight: 600;">Leo pessi</span><br>Mumbai
+                    
+                            </p>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq-container">
+                <div class="faq-heading">
+                    <p style="font-size: 20px; margin-bottom: 5px;"><b>FAQ</b></p>
+                    <h1 style="font-size: 30px; margin-bottom: 15px;"><b>Frequently Asked Questions</b></h1>
+                    <p style="font-size: 15px;">Frequently asked questions about the car rental booking process on our website: Answer to the common concerns and inqueiries.</p>
+                </div>
+                <div class="faq-main">
+                    <div class="faq-img">
+                        <img src="Img/back-car.jpg" alt="">
+                    </div>
+                    <div class="faq-menu">
+                        <div class="select-faq rd" onclick="openfaq('answer_1')">
+                            <span class="sfaq-text"><b>1. What is special about comparing rental car deals?</b></span>
+                            <i class="fa-solid fa-angle-down rtt rt"></i>
+                        </div>
+                            <div class="answer-faq active-answer" id="answer_1">
+                                <p>comparing rental car deals is important as it help find the best deals that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additionals services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.</p>
+                            </div>
+                        
+                        <div class="select-faq" onclick="openfaq('answer_2')">
+                            <span class="sfaq-text"><b>2. How do i find the car rental deals?</b></span>
+                            <i class="fa-solid fa-angle-down rtt"></i>
+                        </div>
+                            <div class="answer-faq" id="answer_2">
+                                <p>You can find car rental deals by researching online and comparing prices from different rental companies. Website such as Expedia, Kayak and Travelocity allow you to compare prices and view available rental option. It is also recomended to sign up for email newsletters and follow renal car companies on social media to be infomed of any special deals or promotion.</p>
+                            </div>
+                        
+                        <div class="select-faq" onclick="openfaq('answer_3')">
+                            <span class="sfaq-text"><b>3. How do i find such low rental car Prices?</b></span>
+                            <i class="fa-solid fa-angle-down rtt"></i>
+                        </div>
+                            <div class="answer-faq" id="answer_3">
+                                <p>Book in advance. Booking your rental car ahead of time can often result in lower prices. Compare prices from multiple companies: Use website such as Expedia, Kayak and Travelocity allow you to compare prices and view available rental option. Look for discount codes and coupens: Search for discount codes and coupens that you can use to lower the rental price.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container" id="contact">
+                <div class="store">
+                    <div class="store-text">
+                        <h1><b>Download our app here</b></h1>
+                        <p>For lighting fast booking experince download the Car Rental app</p>
+                        <div class="store-logo">
+                        <img src="Img/Googleplay.png" alt="">
+                        <img src="Img/apple logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="store-img"><img src="Img/phone-car2.jpg" alt=""></div>
+                </div>
+                <div class="contact-information">
+                    <div class="site-contact">
+                        <p style="font-size: 20px;margin-bottom: 20px;"><b>CAR </b> rental</p>
+                        <p style="font-size: 15px; margin-bottom: 17px;">we offer a big range of vehicles for all your diriving needs. We have the perfect car to meet your needs.</p>
+                        <p class="call-email"><i class="fa-solid fa-phone" style="color: #000000;"></i> <b> (123)-456-789</b></p>
+                        <p class="call-email"><i class="fa-solid fa-envelope" style="color: #000000;"></i> <b> carrental@gmail.com</b></p>
+                    </div>
+                    <div class="site-contact bl mdl" style="width: 12%;">
+                        <p style="font-size: 20px;margin-bottom: 20px;"><b>COMPANY</b></p>
+                        <p>Kokata</p>
+                        <p>Mobile</p>
+                        <p>Blogs</p>
+                        <p>Career</p>
+                        <p>How we work</p>
+                    </div>
+                    <div class="site-contact bl">
+                        <p style="font-size: 20px;margin-bottom: 20px;"><b>WORKING HOURS</b></p>
+                        <p>Mon - Fry 10.00AM - 8.00PM</p>
+                        <p>Sat 10.00AM - 3.00PM</p>
+                        <p>Sun Colsed</p>
+                    </div>
+                    <div class="site-contact lst">
+                        <p style="font-size: 20px;margin-bottom: 20px;"><b>SUBSCRIPTION</b></p>
+                        <P>Subscribe with your email for latest updates.</P>
+                        <input type="email" placeholder="Enter Email Adress">
+                        <p class="btn-red">Submit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
